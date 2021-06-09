@@ -3,7 +3,7 @@
 Making this design from Figma (https://www.figma.com/file/qhHkkzlsyzNZnaOpZuRSHJ/Cars-Layout?node-id=0%3A1) a reality.
 
 ## Finished Design/Outcome
-
+![Desktop Carsales GIF](./Carsales.gif)
 
 ## Desktop Design
 
