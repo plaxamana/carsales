@@ -1,0 +1,157 @@
+$textColor: #565656;
+$primaryColor: #008ad8;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: "Lexend Deca";
+  font-size: 1.125rem;
+  padding: 1em;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.375rem;
+  color: $primaryColor;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+p {
+  color: $textColor;
+}
+
+.price {
+  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 57px;
+  grid-template-rows: auto;
+  gap: 1em;
+}
+
+header > *,
+main > *,
+div > * {
+  grid-column: 1 / 2;
+}
+
+.search-options-container,
+.save {
+  grid-column: 2 / 3;
+  align-self: center;
+  margin-left: 1em;
+}
+
+main > div {
+  grid-column: span 2;
+}
+
+header {
+  padding: 0 0 1em 1em;
+}
+
+.search-options-container {
+  display: relative;
+}
+
+.search-options {
+  cursor: pointer;
+}
+
+.search-box {
+  background: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 36px;
+  position: relative;
+}
+
+.search-box::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/search.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  right: 15px;
+  top: 10px;
+}
+
+.save {
+  background-image: url('../assets/save.svg');
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.save-filled {
+  background-image: url('../assets/save-filled.svg');
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+div.grid {
+  padding: 0 0 1em 1em;
+}
+
+div.grid:hover {
+  background: white;
+  border-radius: 6px;
+}
+
+.menu {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 11px 18px 54px rgba(0,0,0,.11);
+  position: absolute;
+  right: 50px;
+  top: 180px;
+  display: none;
+}
+
+ul {
+  padding: 1em;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li,
+li label {
+  cursor: pointer;
+}
+
+li {
+  padding-bottom: 0.5em;
+}
+

@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carsales</title>
+  <title>Car Sales</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+
 </head>
+
 <body>
-  
+
+  <div class="container">
+    <header class="grid">
+      <h1>Available Cars</h1>
+      <p>There are 15 cars that match your criteria</p>
+      <div class="search-box"></div>
+      <div class="search-options-container">
+        <img src="./assets/menu.svg" alt="search options" class="search-options">
+        <div class="menu">
+          <ul>
+            <li>
+              <input type="checkbox" name="new" id="new" checked>
+              <label for="new">New cars</label>
+            </li>
+            <li>
+              <input type="checkbox" name="used" id="used">
+              <label for="used">Used cars</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Dealership" id="Dealership">
+              <label for="Dealership">Dealership</label>
+            </li>
+            <li>
+              <input type="checkbox" name="owner" id="owner">
+              <label for="owner">For sale by owner</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="grid">
+      <div class="grid">
+        <h2>2017 Toyota Highlander V4</h2>
+        <p>1944 Scrimba Ln <br>Youngstown, OH 44481</p>
+        <p class="price">$17,400</p>
+        <div class="save"></div>
+      </div>
+      <div class="grid">
+        <h2>2012 Toyota Tundra 4x4</h2>
+        <p>301 Fantasy Dr <br>Beverly Hills, CA 90210</p>
+        <p class="price">$23,900</p>
+        <div class="save"></div>
+      </div>
+      <div class="grid">
+        <h2>2004 Dodge Ram 4x4</h2>
+        <p>9104 Falsety Ave <br>AnonyVille, FL 40440</p>
+        <p class="price">$7,988</p>
+        <div class="save"></div>
+      </div>
+    </main>
+  </div>
+
+
   <script src="script.js"></script>
 </body>
+
 </html>
